@@ -8682,3 +8682,46 @@ div.dev-util li {
 div.dev-util li a:hover {
     text-decoration: underline
 }
+
+/*Civic Innovation Grant styles*/
+div.grants{
+	font-size:110%;
+}
+p.tagline{
+	font-size:140%;
+}
+div.grants h2{
+	margin: 24px 0px 6px 0px;
+	/*color: #03719e;	*/
+}
+div.grants ul{
+	margin:6px 0px 18px 36px;
+	list-style:disc;
+}
+div.grants li{
+	margin-bottom:6px;
+}
+div.grants p{
+	margin:0px 0px 14px 0px;
+	/* blue =03719e; orange = fe891f */
+}
+div.grants p.indent{
+	margin-left: 18px;
+}
+div.grants p.topic{
+	font-weight: bold;
+	margin-left:18px;
+}
+div.grants ul.list{
+	margin-top:-9px;
+	margin-left:54px;
+}
+div.grants p.test{
+	margin-top:-6px;
+}
+div.grants a{
+	color: #03719e;
+}
+div.grants a:hover{
+	text-decoration:underline;
+}
