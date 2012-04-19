@@ -8701,7 +8701,7 @@ div.grants ul{
 div.grants li{
 	margin-bottom:6px;
 }
-div.grants p{
+div.grants p, #wufoo p{
 	margin:0px 0px 14px 0px;
 	/* blue =03719e; orange = fe891f */
 }
@@ -8719,9 +8719,9 @@ div.grants ul.list{
 div.grants p.test{
 	margin-top:-6px;
 }
-div.grants a{
+div.grants a, #wufoo a{
 	color: #03719e;
 }
-div.grants a:hover{
+div.grants a:hover, #wufoo a:hover{
 	text-decoration:underline;
 }
