@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html class='universe'>
+<head class='heavens'>
+        <title>Change by Us Philadelphia | Grants</title>
+
+        
+
+        <!-- Basic meta data -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Change by Us Philadelphia is a place to put your ideas into action by creating projects and building teams to make your city a better place to live." />
+        <meta name="viewport" content="width=1020" />
+
+        <!-- Open Graph and Facebook -->
+        <meta property="fb:app_id" content="204545712900061" />
+        <meta property="og:site_name" content="Change by Us Philadelphia" />
+        
+        <meta property="og:title" content="Change by Us Philadelphia" />
+        
+        <meta property="og:type" content="government" />
+        <meta property="og:url" content="http://localhost:8080/grants" />
+        <meta property="og:image" content="http://localhost:8080/static/images/fb-share100x100.png" />
+        
+             <meta property="og:description" content="Change by Us Philadelphia is a place to put your ideas into action by creating projects and building teams to make your city a better place to live." />
+        
+
+        <!-- Links -->
+        <link rel="icon" href="/static/images/favicon.ico" />
+        <link rel="shortcut icon" href="/static/images/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        <!-- Stylesheets -->
+        
+            <link rel="stylesheet" href="/static/css/tc.reset.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/fileuploader.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/tc.gam.fontfaces.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/tc.gam.main.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/project/project.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/project/conversation.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/project/needs.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/project/members.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/project/events.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/tc.gam.search.map.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="/static/css/tc.gam.project.css" type="text/css" media="screen" />
+        
+
+        
+        
+
+        <!--[if IE]>
+        <link rel="stylesheet" href="/static/css/ie/tc.gam.ie.css" type="text/css" media="screen" charset="utf-8"/>
+        <![endif]-->
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/static/css/ie/tc.gam.ie8.css" type="text/css" media="screen" charset="utf-8"/>
+        <![endif]-->
+        <!--[if lte IE 7]>
+        <link rel="stylesheet" href="/static/css/ie/tc.gam.ie7.css" type="text/css" media="screen" charset="utf-8"/>
+        <![endif]-->
+
+        <!-- Custom variable styles -->
+        <style>
+            
+                .continent.home .splash-background {
+                    background-image: url('/static/files/cbu-philly-backdrop.jpg');
+                }
+            
+            
+                .continent.home span.hey {
+                    background-image: url('/static/files/hey-philly.png');
+                }
+            
+        </style>
+
+        <!-- Javascript -->
+        
+        <script>
+            var app_page = {
+                data:{},
+                features:[],
+                prevent_logging:false
+            };
+
+            // TODO not hardcode this
+            app_page.data.info_addr = { name:'info', domain:'codeforamerica.org' };
+            app_page.data.media_root = 'https://s3.amazonaws.com/cbu-testing/data/files/';
+
+            app_page.data.map = {
+                center_lat: 10,
+                center_lon: 10
+            };
+
+            app_page.data.supported_features = {"is_display_featured_projects": true, "is_community_leaders_displayed": true, "is_feedback_form_available": true, "is_official_supported": false, "is_display_leaderboard": false};
+
+            // for tooltip only
+            var media_root = 'https://s3.amazonaws.com/cbu-testing/data/files/';
+
+            app_page.features.push(function(app){
+                tc.util.log('CBU: Base');
+                app.components.modal = new tc.modal(app,{
+                    element:tc.jQ('#modal')
+                });
+                app.components.top_bar = tc.top_bar(tc.jQ(".stratosphere"), {});
+            });
+        </script>
+        
+
+        
+            <!-- Typekit font -->
+            <script type="text/javascript" src="http://use.typekit.com/mco2pzd.js"></script>
+            <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        
+</head>
+
+<!-- the "green-nyc" class is to decorate page with green-specific styles -->
+<body class="earth    ">
+        <div class="exosphere">
+            <div class="atmosphere">
+                <div class="stratosphere">
+
+                  <!-- Main navigation -->
+                    <ul class="navbar clearfix">
+                        <li class="home philly">
+                            <a href="/">
+                                <span>Change by Us Philadelphia</span>
+                                <span class="city-name">Philadelphia</span>
+                                
+                            </a>
+                        </li>
+
+                        <li class="lang">
+                        <div class='lang-selector'>
+                        
+
+                          <div class="dropdown no-js">
+                            <div class="membrane">
+                              
+                            </div>
+                          </div>
+                        </div>
+                        </li>
+
+                        <li class="news-about">
+                            
+                                <a href="http://codeforamerica.org/">News</a>
+                            
+                            <a href="/about">About</a>
+                        </li>
+
+                        <li class="userland">
+                          <!-- User account actions -->
+                            <div class="join"><a href="/join">Join</a></div>
+                            <div class="login"><a href="/login">Login</a></div>
+                            <div class="username">
+                                <a href="/useraccount#user-account,account">
+                                  <span class="unbold">Hi, </span>!
+                                </a>
+
+                                <div class="dropdown no-js">
+                                    <div class="membrane">
+                                        <a href="/useraccount#user-account,account">Account</a>
+                                        <a href="#logout">Log out</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Messages -->
+                            <div class='messages '>
+                            <a href='/useraccount#user-account,messages'>
+                                  <span class="indicator"></span>
+                                  
+                                </a>
+                          </div>
+
+                            <!-- Projects -->
+                            <div class='myprojects'>
+                                <a href='/useraccount'><span class="unbold">My </span>Projects</a>
+                                <div class="dropdown no-js">
+                                    <div class="membrane">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="search">
+                            <div class='search-button'>
+                                <a href='/search'>Search</a>
+                                <div class="dropdown no-js">
+                                    <div class="membrane">
+                                        <form action='/search' method='GET'>
+                                            <input type='text' name='terms' value="" />
+                                            <input type='text' name='main_text' style='display:none;'></input>
+                                            <input type='submit' value='' class='searchInput' />
+                                        </form>
+
+                                        <div class="browse">Browse <a href="/search#projects">projects</a>, <a href="/search#ideas">ideas</a>, and <a href="/search#resources">resources</a></div>
+                                        <div class="browse-tags serif"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+                    </ul>
+
+                    <!-- Administration bar -->
+                    
+                </div>
+            </div>
+
+            
+<div class="continent grants">
+    <div class="midlands">
+
+        <h1>Change by Us Philly Civic Innovation Grants</h1>
+        <p class="tagline">Do you have a great idea for a project that will make Philadelphia smarter, safer or greener? Then apply for a Change by Us Philly Civic Innovation Grant by Month XX, 2012!</p>
+
+        <strong class="description">Grand awardees will receive</strong>
+        <ul class="grant-awardees">
+            <li>Grants from $500 to $3,000</li>
+            <li>Support and technical assistance</li>
+            <li>Public Service Announcement and video content creation support</li>
+        </ul>
+
+        <strong class="description">Eligibility</strong>
+        <ul class="eligibility">
+             <li>Volunteer-led groups based in neighborhoods throughout Philadelphia. Groups are not required to have 501(c)(3) status. Groups without 501(c)(3) status will need a fiscal sponsor or a bank account if a grant is awarded.</li>
+             <li>Groups must have (or create) a project on the <a href="http://philly.changeby.us">Change by Us Philly</a> website.</li>
+             <li>Groups must have a minimum of 25 members on their Change by Us project page.</li>
+             <li>Individuals, for-profit projects, businesses, and religious, fraternal, and partisan/political organizations are not eligible for Civic Innovation Grants.</li>
+        </ul>
+
+        <h2>How to Apply</h2>
+        <strong class="description">Your group already has a Change by Us project page with 25 members:</strong>
+        <ul>
+            <li>Complete the <a href="/grants/apply">Civic Innovation Grant application</a> online by April 30, 2012.</li>
+        </ul>
+
+        <strong class="description">Your group does not yet have a project page on Change by Us:</strong>
+        <ul>
+            <li><a href="http://philly.changeby.us/create#start">Create a project</a></li>
+            <li>Gather 25 members</li>
+            <li>Complete the <a href="/grants/apply">Civic Innovation Grant application</a> online by April 30, 2012</li>
+        </ul>
+
+        <strong class="description">All applicants:</strong>
+        <p>You will need the following information to complete the online Civic Innovation Grant application:</p>
+        <div class="indented">
+            <p class="indent"><strong>Workplan/Timeline:</strong> Explain the actions your project will undertake, the people involved, the dates, and intended outcomes. For example, "Paint a wall around a community garden, Sally and Bob Smith, June 30, 2012, neighborhood beautification."</p>
+
+            <p class="indent"><strong>Project Budget:</strong> Budget details totaling up to $3,000 that include all planned expenses related to the project. For example, “Paint, 5 gallons, $50.”</p>
+
+            <p class="indent"><strong>Note:</strong> Civic Innovation Grants do not cover personnel or ongoing/operating costs. If applicants wish to include a stipend as part of their project budget, the maximum allowance is 25% of their total budget (e.g. for a grant totaling $800, applicants may request up to $200 for a stipend). Budget costs should consist only of one-time expenses related to the project and/or items such as equipment or supplies. </p>
+
+            <p class="indent">If you have any questions, please contact <a href="mailto:jeff.friedman@phila.gov">jeff.friedman@phila.gov</a> for assistance.</p>
+        </div>
+
+        <h2>Important Dates</h2>
+        <ul>
+            <li>Grant Application Workshops XXX, XXX</li>
+            <li>Application Deadline XXX</li>
+            <li>Grantees Announced 	XXX</li>
+            <li>Reporting Due XXX </li>
+        </ul>
+
+        <h2>Selection Criteria</h2>
+        <strong class="description">All project proposals should:</strong>
+        <ul class="”criteria”">
+            <li>Be clear and thoughtful and respond to all questions in the application</li>
+            <li>Result in concrete, measurable, and sustainable projects/initiatives</li>
+            <li>Contribute to building stronger neighborhoods through collaborative effort</li>
+            <li>Track and report key data (e.g. number of volunteers, total volunteer hours)</li>
+            <li>Be innovative and creative</li>
+        </ul>
+
+        <h2>Project Categories:</h2>
+        <p class="”categories”">Proposals should address one (or all) of the following categories. Proposals that fulfill the criteria within a category will be prioritized for an award.</p>
+
+        <p class="topic">Safer Projects (e.g. public safety) </p>
+        <ul class="list">
+            <li>Initiatives that connect neighborhood town watch groups and/or cultivate community action around crime abatement</li>
+        </ul>
+
+        <p class="topic">Smarter Projects (e.g. education) </p>
+        <ul class="list">
+            <li>Initiatives should engage and include parents and community members in a meaningful and consequential way.</li> 
+            <li>Results of any initiatives should be measurable and quantifiable, specifically as it relates to student achievement and college readiness. </li>
+            <li>Initiatives should be broad-based, inclusive, and equitable. </li>
+            Initiatives should be scalable and replicable, so as to have pervasive, meaningful, and sustainable impact across the city.
+        </ul>
+
+        <p class="topic">Greener Projects (e.g. sustainability or environmentally focused) </p>
+        <ul class="list">
+        <li>Tree planting initiatives</li>
+        <li>Creation of neighborhood greenspace, particularly in areas lacking</li>
+        <li>Creation green stormwater infrastructure</li>
+        </ul>
+
+        <p class="topic">Innovation and Creativity</p>
+        <p class="indent test">Additional preference will be given to projects that show innovation and creativity in their approach. Examples include projects that cut across several project categories (e.g. using compost or rain water collected within community gardens for tree stewardship) and projects that create unique collaborations (e.g. multi-generational volunteer groups, novel public/private partnerships).</p>
+
+        <p class="indent">If you have any questions, please contact <a href="mailto:jeff.friedman@phila.gov">jeff.friedman@phila.gov</a>.</p>
+
+        <h2>About Civic Innovation Grants</h2>
+        <p class="”about”">Through Change by Us Philly, Philadelphians can turn ideas for improving their neighborhoods into action. This grant program, supported by the City of Philadelphia, the Knight Foundation, and CEOs for Cities, intends to provide support for volunteer-led, Change by Us Philly projects that focus on projects that make our city smarter, safer or greener. During this cycle, there will be a total of 20 grants, ranging from $500 to $3,000 each. Funding for grants is made possible by the Knight Foundation and facilitated by CEOs for Cities.</p>
+
+
+    </div>
+</div>
+
+
+        <!-- Footer -->
+        <div class='seafloor'>
+          <!-- List of supporters -->
+            <div class='box logos clearfix'>
+                <span class="supported fancy-caps">Created <span>by</span></span>
+                <a href='http://www.localprojects.net' target='_blank'><img src='/static/images/footer-localprojects.png' alt='Local Projects' /></a>
+                <a href='http://www.ceosforcities.org/' target='_blank'><img src='/static/images/footer-ceosforcities.png' alt='CEOs For Cities' /></a>
+                <a href='http://codeforamerica.org' target='_blank'><img src='/static/images/footer-cfa.png' alt='Code for America' /></a>
+                
+
+                <span class="supported fancy-caps">Supported <span>by</span></span>
+                <a href='http://www.rockefellerfoundation.org' target='_blank'><img src='/static/images/footer-rockefeller.png' alt='The Rockefeller Foundation' /></a>
+                <a href='http://www.knightfoundation.org/' target='_blank'><img src='/static/images/footer-knight.png' alt='The Knight Foundation' /></a>
+<!--                <a href='http://www.casefoundation.org/' target='_blank' class="taller"><img src='/static/images/footer-case.png' alt='The Case Foundation' /></a>-->
+            </div>
+
+            <!-- Basic links and search -->
+            <div class='west'>
+                <div class="box">
+                    <ul class="sitemap">
+                        <li><a href='/about'>About Change by Us Philadelphia</a></li>
+                        <li><a href='/faq'>Frequently Asked Questions</a></li>
+                        
+                            <li><a href='http://codeforamerica.org/'>News</a></li>
+                        
+                        <li><a href='/tou#community-policy'>Community Policy</a></li>
+                        <li class="sitemap-tou"><a href='/tou'>Terms of Use</a></li>
+                        <li><a href='/tou#privacy'>Privacy Policy</a></li>
+                    </ul>
+
+                    <div class="search generic-search clearfix">
+                        <form action='/search' method='GET'>
+                            <input type='text' id='ft-search-field' class='ft-search-field serif has-been-focused' name='terms' value="" />
+                            <input type='submit' id='ft-search-btn' class='ft-search-btn' value='Search' />
+                        </form>
+                    </div>
+                    <a href="/feedback" class="feedback-button rounded-button small">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Credits -->
+            <div class='east'>
+                <div class='box'>
+                    <p class="fancy-caps">Design <span>and</span> Development</p>
+                    <p>&copy; 2011 <strong><a href="http://localprojects.net/">Local Projects, LLC.</a></strong><br />All rights reserved.</p>
+                    <p><br /></p>
+                    <p>&copy; 2011 <strong><a href="http://codeforamerica.org/">Code for America</a></strong><br />All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Development help -->
+        
+          
+
+        
+  </div>
+
+    <!-- Modal dialogues placeholder -->
+  <div id='modal' class='modal'></div>
+
+  <!-- Tooltip placeholder -->
+  <div class='tooltip' id='organization-tooltip' style='display:none;position:absolute;'></div>
+
+    <!-- Invite ideas merlin template (does this need to be on every page?) -->
+  
+	<div class='template-content modal-content merlin invite-user'>
+		<div class='step invite-message-info'>
+			<h2 class="has-name">Invite <strong><span class="name">&nbsp;</span></strong> To Your Project</h2>
+			<h2 class="no-name">Invite To Your Project</h2>
+			<p class="has-name">You can send a message to <span class="name"></span> with some details about your project and reasons to join. (Optional)</p>
+			<p class="no-name">You can send a message with some details about your project and reasons to join. (Optional)</p>
+			<form action='#' class="form-pane">
+				<div class="fields">
+					<textarea name='invite-message' class='invite-message has-been-focused'></textarea>
+					<span class="charlimit invite-message">200</span>
+				</div>
+				<a class='submit rounded-button' href="#">Send</a>
+			</form>
+		</div>
+		
+		<div class="step invite-message-project-info">
+			<h2 class="has-name">Invite <strong><span class="name">XXXXXXX</span></strong> To Your Project</h2>
+			<h2 class="no-name">Invite To Your Project</h2>
+			<p class="has-name">Since you are a part of multiple projects, we need to know which project you would like to invite <span class="name">XXXXXX</span> to?</p>
+			<p class="no-name">Since you are a part of multiple projects, we need to know which project you would like to send an invite for?</p>
+			<form action='#' class="form-pane non-float checklist">
+				<div class="fields">
+					
+				</div>
+				<a class='submit rounded-button' href="#">Send</a>
+			</form>
+		</div>
+		
+		<div class='step invite-message-submit spinner-message'>
+			<p>Thanks for sending an invitation!</p>
+			<p><img src='/static/images/loader32x32.gif' alt='' /></p>
+		</div>
+		
+		<div class="step invite-message-error">
+			<p>There was an error sending this invitation.</p>
+		</div>
+		
+		<a class='close' href="#"><span>close</span></a>
+	</div>
+
+    <!-- Delete idea modal template (does this need to be on every page?) -->
+  
+	<div class="template-content modal-content confirm-delete remove-idea">
+		<div class="step">
+			<h2><strong>Delete</strong> this Idea?</h2>
+			<div>
+				<p>This deletes the idea from the system permanently! <br/>Are you sure?</p>
+			</div>
+			<div class="actions">
+				<a class="submit rounded-button" href="#">Yes, Delete Idea</a>
+				<a class="cancel" href="#">No, keep it.</a>
+			</div>
+		</div>
+		<a class='close' href="#"><span>close</span></a>
+	</div>
+
+    <!-- Message modal template -->
+    
+    
+
+    <!-- Resource modal template -->
+    
+
+    <!-- Javascript libraries -->
+    
+        <script type="text/javascript" src="/static/js/libs/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jqtools.tabs.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jqtools.tooltips.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jqtools.dynamic.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jqtools.scrollable.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jqtools.overlay.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jqtools.expose.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jquery.hashchange.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jquery.color.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jquery.elastic.js"></script>
+        <script type='text/javascript' src="/static/js/libs/jquery.oembed.js"></script>
+        <script type="text/javascript" src="/static/js/libs/fileuploader.js"></script>
+        <script type="text/javascript" src="/static/js/libs/prettyCheckboxes.js"></script>
+        <script type="text/javascript" src="/static/js/libs/prettyDate.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jqdropdown.js"></script>
+        <script type="text/javascript" src="/static/js/libs/icanhaz/ICanHaz.min.js"></script>
+        <script type="text/javascript" src="/static/js/libs/jquery.cookie.js"></script>
+    
+
+    <!-- Javascript TC GAM framework -->
+    
+        <script type="text/javascript" src="/static/js/tc.gam.base.js"></script>
+        <script type="text/javascript" src="/static/js/tc.util.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.validate.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.merlin.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.topbar.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.modal.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.carousel.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.tooltip.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.locationDropdown.js"></script>
+        <script type="text/javascript" src='/static/js/tc.gam.inlineEditor.js'></script>
+        <script type="text/javascript" src="/static/js/tc.gam.project.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.invite.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.add_resource.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.user_handler.js"></script>
+        <script type="text/javascript" src="/static/js/tc.gam.app.js"></script>
+    
+
+    
+
+    <!--  Google Plus -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <script type='text/javascript'>
+        jQuery(document).one('ready',function(e){
+
+            if( tc.jQ('ul.adminbar li.adminQuestion select.questions').length > 0 )
+            {
+                tc.jQ('ul.adminbar li.adminQuestion select.questions').jqDropDown({
+                    effect: 'fade',
+                    effectSpeed: 150,
+                    afterToggle: function(){
+                        $('ul.adminbar li.adminQuestion div.ddContainer a.ddToggle').addClass('down');
+
+                        var removeDownClass = function(){
+                            $('ul.adminbar li.adminQuestion div.ddContainer a.ddToggle').removeClass('down');
+                            $(document).unbind('mousedown', removeDownClass);
+                        };
+
+                        $(document).bind('mousedown', removeDownClass );
+                    }
+                });
+            };
+
+            tc.jQ('input[type=checkbox],input[type=radio]')
+                .not('.has-prettycheckbox')
+                .prettyCheckboxes();
+
+            tc.jQ(".time-since").time_since(); //pretty date formatting
+
+             app_page.media_root = 'https://s3.amazonaws.com/cbu-testing/data/files/'; 
+
+            
+                app_page.user = null;
+            
+
+             app_page.project_user = null; 
+            
+            
+            if(!app_page.data.locations){ app_page.data.locations = []; }
+            
+             app_page.data.all_ideas = null; 
+
+            if (app_page.data.info_addr) {
+                $('.nospam.infomail').html(tc.makeEmailLink(app_page.data.info_addr.name, app_page.data.info_addr.domain));
+            }
+
+            tc.util.log(':::: APP_PAGE ::::');
+            tc.util.dump(app_page);
+
+            tc.app(app_page);
+
+            /* DELETE THIS LATER!!!!!!! */
+            $('.dev-util .toggle').click(function() {
+              $('.dev-util-content').toggle();
+            });
+            /* STOP DELETEING!!!!! */
+        });
+    </script>
+
+    
+
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({appId: '204545712900061', status: true, cookie: true, xfbml: true});
+            tc.util.dump('FB.init!');
+        };
+
+        (function() {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol +
+                '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    </script>
+
+    
+        <script type="text/javascript" charset="utf-8">
+            var is_ssl = ("https:" == document.location.protocol);
+            var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+            document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
+        <script type="text/javascript" charset="utf-8">
+            var feedback_widget_options = {};
+
+            feedback_widget_options.display = "overlay";
+            feedback_widget_options.company = "None";
+            feedback_widget_options.placement = "left";
+            feedback_widget_options.color = "#23211F";
+            feedback_widget_options.style = "idea";
+            feedback_widget_options.product = "None";
+            feedback_widget_options.limit = "3";
+            var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+        </script>
+    
+
+    
+
+</body>
+</html>
